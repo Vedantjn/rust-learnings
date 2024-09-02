@@ -39,7 +39,11 @@
 
 fn main() {
     let y = is_even(5);
-    println!("Value of y is: {y}");
+    println!("Value of y is: {y}"); 
+
+    // if y is true, x = 10 else x = 20
+    let x = if y {10} else {20};
+    println!("value of x : {x}");
 }
 
 fn is_even(x: i32) -> bool {
