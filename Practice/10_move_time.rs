@@ -1,7 +1,8 @@
 fn main() {
     let mut s1 = String::from("vedant");
-
+    
     s1 = do_something(s1);
+
     println!("number uis {}", s1);
 }
 
