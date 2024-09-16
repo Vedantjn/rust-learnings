@@ -1,0 +1,1 @@
+Resource I'm following: Harkirat Singh -> https://www.youtube.com/watch?v=joCFbTJt0o0
