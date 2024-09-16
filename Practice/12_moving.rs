@@ -1,29 +1,29 @@
-// fn main() {
-//     create_string();
-// }
+fn main() {
+    create_string();
+}
 
-// fn create_string() {
-//     let s1 = String::from("Vedant");
-//     // let s2 = s1.clone();
-//     let s2 = s1;
+fn create_string() {
+    let s1 = String::from("Vedant");
+    // let s2 = s1.clone();
+    let s2 = s1;
 
-//     println!("{}", s1);
-//     println!("{}", s2);
-// }
+    println!("{}", s1);
+    println!("{}", s2);
+}
 
 // -------------------------------------------------------------
 
-// fn main() {
-//     let s1 = String::from("Vedant");
-//     do_something(s1.clone());
-//     do_something(s1); // Pass ownership of s1 to do_something
+fn main() {
+    let s1 = String::from("Vedant");
+    do_something(s1.clone());
+    do_something(s1); // Pass ownership of s1 to do_something
 
-//     // println!("{}", s1); // This will cause a compile-time error because s1 is moved
-// }
+    // println!("{}", s1); // This will cause a compile-time error because s1 is moved
+}
 
-// fn do_something(s2: String) {
-//     println!("{}", s2);
-// }
+fn do_something(s2: String) {
+    println!("{}", s2);
+}
 
 // -------------------------------------------------------------
 
