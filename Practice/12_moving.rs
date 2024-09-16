@@ -11,15 +11,31 @@
 //     println!("{}", s2);
 // }
 
+// -------------------------------------------------------------
+
+// fn main() {
+//     let s1 = String::from("Vedant");
+//     do_something(s1.clone());
+//     do_something(s1); // Pass ownership of s1 to do_something
+
+//     // println!("{}", s1); // This will cause a compile-time error because s1 is moved
+// }
+
+// fn do_something(s2: String) {
+//     println!("{}", s2);
+// }
+
+// -------------------------------------------------------------
+
 
 fn main() {
-    let s1 = String::from("Vedant");
-    do_something(s1.clone());
-    do_something(s1); // Pass ownership of s1 to do_something
+    let mut s1 = String::from("Vedant");
+    s1 = do_something(s1);
 
-    // println!("{}", s1); // This will cause a compile-time error because s1 is moved
+    println!("{}", s1); 
 }
 
-fn do_something(s2: String) {
+fn do_something(s2: String) -> String{
     println!("{}", s2);
+    return s2;
 }
