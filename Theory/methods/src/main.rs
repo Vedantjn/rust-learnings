@@ -14,8 +14,15 @@ impl Rectangle {
         self.width >= other.width && self.height >= other.height
     }
 
-    fn new_square(side: u32) -> Rectangle {
-        Rectangle {
+    // fn new_square(side: u32) -> Rectangle {
+    //     Rectangle {
+    //         width: side,
+    //         height: side
+    //     }
+    // }
+
+    fn new_square(side: u32) -> Self {
+        Self {
             width: side,
             height: side
         }
