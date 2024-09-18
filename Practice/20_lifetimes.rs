@@ -88,3 +88,4 @@ fn main() {
     println!("{}", longest_string); // Compilation error
 }
 
+// Now, this code will fail with a better error message
