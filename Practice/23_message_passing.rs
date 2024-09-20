@@ -1,18 +1,18 @@
-// use std:: {
-//     sync::mpsc,
-//     thread::{self, spawn},
-// };
+use std:: {
+    sync::mpsc,
+    thread::{self, spawn},
+};
 
-// fn main() {
-//     // mpsc -> multiple producer single consumer
-//     let (tx, rx) = mpsc::channel();
-//     spawn(move || {
-//         tx.send(String::from("Hello World")).unwrap();
-//     });
+fn main() {
+    // mpsc -> multiple producer single consumer
+    let (tx, rx) = mpsc::channel();
+    spawn(move || {
+        tx.send(String::from("Hello World")).unwrap();
+    });
 
-//     let value = rx.recv().unwrap();
-//     println!("{}", value);
-// }
+    let value = rx.recv().unwrap();
+    println!("{}", value);
+}
 
 // -------------------------------------------------------------
 
